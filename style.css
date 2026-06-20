@@ -1,0 +1,200 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: blueviolet;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#heading{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background: linear-gradient(white, blueviolet)
+}
+
+#quiz {
+    color: rgb(247, 122, 5);
+    font-family: 'Fanky Bubble';
+    font-style: normal;
+    font-weight: bolder;
+    text-decoration:solid;
+    src: local('Fanky Bubble'), url('https://fonts.cdnfonts.com/s/116541/FankyBubbleExtrude-lx8Me.woff') format('woff');    
+    font-size: 167px;
+    text-shadow: 15px 15px 40px rgb(255, 255, 255),-15px -15px 40px rgb(255, 255, 255);
+    transition: all 200ms ease;
+    
+    
+}
+#quiz:hover{
+    transform: scale(110%);
+    transition: all 200ms ease ;
+    cursor: pointer;
+}
+
+#indicator{
+    margin-top: 2px;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-around;
+}
+.card {
+    border: rgb(205, 205, 8) 10px solid;
+    border-radius: 12px;
+    padding: 15px;
+    background: linear-gradient(180deg,
+            #2e63df,
+            #011882);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    transition: all 400ms ease;
+    backdrop-filter: blur(8px);   
+    color: white;
+    height: 367px;
+    width: 300px
+
+}
+.card:hover {
+    transform: translateY(-6px);
+    border: 20px solid #8750e6;
+    box-shadow: #4a669e 2px 4px 3px;
+}
+#holder{
+    display: flex;
+    background: linear-gradient(darkblue, blueviolet);
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#enter{
+    width: 600px;
+    padding: 25px;
+    font-size: 30px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 6px 6px 30px aqua, -6px -6px 30px aqua;
+    margin-top: 60px;
+}
+#ask{
+    color: whitesmoke;
+    font-size: 50px;
+    margin-top:80px;
+    border: 9px solid rgb(208, 137, 200);
+    border-radius: 20px;
+    padding: 20px;
+    background: linear-gradient(90deg, rgb(169, 15, 220),rgb(97, 30, 190));
+}
+.card2{
+    border: rgb(205, 205, 8) 10px solid;
+    border-radius: 30px;
+    padding: 15px;
+    background: linear-gradient(180deg,
+            #2e63df,
+            #011882);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    transition: all 400ms ease;
+    backdrop-filter: blur(8px);   
+    color: white;
+    height: 50px;
+    width: 100px;
+    margin-top: 50px;
+}
+#indicator2{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    justify-content: space-around;
+    margin-top: 0px;
+    margin-left: 25%;
+}
+.card2:hover{
+    transform: translateY(-6px);
+    border: 15px solid #8750e6;
+    scale: 1.19;
+    box-shadow: #4a669e 2px 4px 3px;
+    cursor: pointer;
+}
+#questionbox{
+    border: 6px solid black;
+    height: 500px;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+    border-radius: 30px;
+    display: flex;
+    background: radial-gradient(ellipse, rgb(52, 92, 224), rgb(208, 42, 230));
+}
+#qq{
+    font-size: 50px;
+    width: fit-content;
+    border: 4px solid black;
+    border-radius: 30px;
+    padding: 15px;
+    margin-left: 30px;
+    margin-top: 30px;
+    background: linear-gradient(blueviolet,blue);
+    color: white;
+    box-shadow: 6px 6px 30px aqua, -6px -6px 30px aqua;
+}
+#optionbox{
+    display: grid;
+    grid-template-columns: 500px 500px;
+    column-gap: 30px;
+    row-gap: 1px;
+    width: 80%;
+    margin: 120px auto;
+    margin-top: 170px;
+}
+
+
+.ops{
+    border: rgb(205, 205, 8) 10px solid;
+    border-radius: 30px;
+    padding: 15px;
+    background: linear-gradient(180deg,
+            #2e63df,
+            #011882);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    transition: all 400ms ease;
+    backdrop-filter: blur(8px);   
+    color: white;
+    height: 50px;
+    width: 67%;
+    margin-top: 50px;
+}
+.ops:hover{
+    transform: translateY(-6px);
+    border: 15px solid #8750e6;
+    scale: 1.19;
+    box-shadow: #4a669e 2px 4px 3px;
+    cursor: pointer;
+
+}
+.ops:active{
+    transform: translateY(10px);
+    transform: translateX(10px);
+    transform: scale(70%);
+    transition: ease, 100ms;
+}
